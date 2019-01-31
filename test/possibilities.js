@@ -6,7 +6,7 @@ assert.options.strict = true;
 
 tests['l possibilities'] = function () {
   var actual = convert().from('l').possibilities()
-    , expected = [ 'mm3', 'cm3', 'ml', 'cl', 'dl', 'l', 'kl', 'm3', 'km3', 'krm', 'tsk', 'msk', 'kkp', 'glas', 'kanna', 'tsp', 'Tbs', 'in3', 'fl-oz', 'cup', 'pnt', 'qt', 'gal', 'ft3', 'yd3' ];
+    , expected = [ 'hl', 'mm3', 'cm3', 'ml', 'cl', 'dl', 'l', 'kl', 'm3', 'km3', 'krm', 'tsk', 'msk', 'kkp', 'glas', 'kanna', 'tsp', 'Tbs', 'in3', 'fl-oz', 'cup', 'pnt', 'qt', 'gal', 'ft3', 'yd3' ];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -36,7 +36,7 @@ tests['mass possibilities'] = function () {
 
 tests['volume possibilities'] = function () {
   var actual = convert().possibilities('volume')
-    , expected = [ 'mm3', 'cm3', 'ml', 'cl', 'dl', 'l', 'kl', 'm3', 'km3', 'krm', 'tsk', 'msk', 'kkp', 'glas', 'kanna', 'tsp', 'Tbs', 'in3', 'fl-oz', 'cup', 'pnt', 'qt', 'gal', 'ft3', 'yd3' ];
+    , expected = [ 'hl', 'mm3', 'cm3', 'ml', 'cl', 'dl', 'l', 'kl', 'm3', 'km3', 'krm', 'tsk', 'msk', 'kkp', 'glas', 'kanna', 'tsp', 'Tbs', 'in3', 'fl-oz', 'cup', 'pnt', 'qt', 'gal', 'ft3', 'yd3' ];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -373,6 +373,7 @@ tests['all possibilities'] = function () {
       , 'yd3/s'
       , 'year'
       , 'μC'
+      , 'hl'
   ];
 
   try {

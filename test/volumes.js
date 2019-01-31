@@ -116,6 +116,10 @@ tests['Tbs to Tbs'] = function () {
   assert.strictEqual( convert(140).from('Tbs').to('Tbs') , 140);
 };
 
+tests['hl to l'] = function () {
+  assert.strictEqual( convert(1).from('hl').to('l') , 100);
+};
+
 // When converting between systems, expect < 0.1% error
 tests['tsp to l'] = function () {
   var expected = 1.75
